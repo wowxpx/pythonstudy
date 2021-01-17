@@ -1,8 +1,15 @@
-"""xpx的练习题"""
-fenshu = input("请告诉我你这次数学考试的成绩：")
-daan = int(fenshu)
-if daan ==100:
-      print("不错，你离女神又近了一步。")
+import random
 
-else:
-      print("小子，想要幸福，就得努力。")
+counts = int(input("请输入抛硬币的次数："))
+i = 0
+
+print("开始抛硬币实验：")
+while i < counts:
+    num = random.randint(1, 10)
+
+    if num % 2:
+        print("正面", end=" \n")
+    else:
+        print("反面", end=" \n")
+
+    i += 1
